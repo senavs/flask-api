@@ -1,3 +1,3 @@
-from .. import db
+from project import db
 
 # create your models here

@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 from .configuration import config
-from .application1 import app_application1
+from .backend.application1 import app_application1
 
 db = SQLAlchemy()
 migrate = Migrate()
