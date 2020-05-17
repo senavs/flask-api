@@ -11,7 +11,9 @@ migrate = Migrate()
 
 def create_app(config_name: str = 'develop'):
     # configurations
-    app = Flask(__name__)
+    app = Flask(__name__,
+                static_folder='frontend/static',
+                template_folder='frontend/templates')
     app.config.from_object(config[config_name])
 
     # init app
