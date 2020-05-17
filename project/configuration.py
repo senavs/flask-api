@@ -1,7 +1,8 @@
 import os
 from abc import ABC
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 
 class ConfigBase(ABC):
