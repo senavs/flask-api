@@ -17,5 +17,11 @@ class WerkzeugEnvironment(BaseSettings):
     DEBUG: Optional[bool] = True
 
 
+class DatabaseEnvironment(BaseSettings):
+    DATABASE_URI: Optional[str] = 'sqlite:///db.sqlite3'
+    DATABASE_RESET: Optional[bool] = False
+
+
 project_env = ProjectEnvironment()
 werkzeug_env = WerkzeugEnvironment()
+database_env = DatabaseEnvironment()

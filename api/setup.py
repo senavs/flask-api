@@ -7,13 +7,15 @@ except FileNotFoundError:
     long_description = ''
 
 requirements = [
+    'Werkzeug==1.0.1',
     'Flask==1.1.2',
     'pydantic==1.6.1',
+    'SQLAlchemy==1.3.19',
     'gunicorn==20.0.4'
 ]
 
 setup(
-    name='Flask API project',
+    name='Flask API Project',
     version='1.0.0',
     long_description=long_description,
     packages=find_packages(),
