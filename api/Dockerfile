@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 
 RUN mkdir /code
-COPY ./api/ /code
+COPY . /code
 WORKDIR /code
 
 RUN pip3 install .

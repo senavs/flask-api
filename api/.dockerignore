@@ -1,0 +1,9 @@
+# folders
+__pycache__/
+__pypackages__/
+test/
+
+# files
+.gitignore
+db.sqlite3
+Dockerfile

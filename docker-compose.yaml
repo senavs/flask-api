@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  api:
+    container_name: project-api
+    image: project-api
+    build:
+      context: api
+      dockerfile: Dockerfile
+    ports:
+      - 8000:5000
+    volumes:
+      - ./api/:/code
