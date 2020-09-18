@@ -31,4 +31,8 @@ class APPSignals(FlaskBaseExtension):
 
     def _register_signals(self):
         for name, signal in self._view_funcs.items():
-            self.app.__dict__[f'{name}_funcs'] = signal
+            if name == 'before_first_request':
+                # it's a list, it doesn't have .update() method
+                self.app.__dict__[f'{name}_funcs'] += signal
+            else:
+                self.app.__dict__[f'{name}_funcs'].update(signal)
