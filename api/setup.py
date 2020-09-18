@@ -11,7 +11,9 @@ requirements = [
     'Flask==1.1.2',
     'pydantic==1.6.1',
     'SQLAlchemy==1.3.19',
-    'gunicorn==20.0.4'
+    'gunicorn==20.0.4',
+    'prometheus-client==0.8.0',
+    'Flask-Cors==3.0.9'
 ]
 
 setup(
