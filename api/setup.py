@@ -13,7 +13,8 @@ requirements = [
     'SQLAlchemy==1.3.19',
     'gunicorn==20.0.4',
     'prometheus-client==0.8.0',
-    'Flask-Cors==3.0.9'
+    'Flask-Cors==3.0.9',
+    'flake8==3.8.3'
 ]
 
 setup(

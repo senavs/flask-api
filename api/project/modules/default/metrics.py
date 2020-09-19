@@ -13,7 +13,7 @@ class PrometheusMetricsEndpoint(FlaskBaseExtension):
         super().__init__(app)
 
         if multiprocessing and not os.environ.get('prometheus_multiproc_dir'):
-            raise ValueError(f"to use multiprocessing metrics, please define 'prometheus_multiproc_dir' to environments variables")
+            raise ValueError("to use multiprocessing metrics, please define 'prometheus_multiproc_dir' to environments variables")
 
         self._is_multiprocessing = bool(multiprocessing)
 
