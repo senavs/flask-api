@@ -9,7 +9,7 @@ except FileNotFoundError:
 requirements = [
     'Werkzeug==1.0.1',
     'Flask==1.1.2',
-    'pydantic==1.6.1',
+    'pydantic==1.6.2',
     'SQLAlchemy==1.3.19',
     'gunicorn==20.0.4',
     'prometheus-client==0.8.0',
